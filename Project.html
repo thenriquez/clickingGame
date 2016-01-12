@@ -1,100 +1,202 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="Project.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-
-	<title>Marvels Pick Who?</title>
-</head>
-<body>
-<header class="container-fluid">
-<h1 class="heading">Deadpool Presents: Marvel Click Game!</h1>
-<h1 class="sub-heading">Just click on any Marvel Heros you like but please choose me!</h1>
-</header>
-<div class="container-fluid">
-    <div class="row">
-      <aside>
-        <div class="col-xs-12 col-sm-2">
-          <table class="table scorer">
-            <tr>
-              <td>
-                <h4><strong>Score</strong></h4></td>
-            </tr>
-            <tr>
-              <td>
-              <h2 id="runningCount">0</h2></td>
-            </tr>
-          </table>
-          <table class="table timer">
-            <tr>
-              <td>
-                <h4><strong>Time</strong></h4></td>
-            </tr>
-            <tr>
-              <td>
-                <h2 id="runningTime">20</h2></td>
-
-            </tr>
-          </table>
+  <head>
+    <link rel="stylesheet" type="text/css" href="Project.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <title>Marvels Pick Who?</title>
+  </head>
+  <body>
+    <header class="container-fluid">
+      <h1 class="heading">Deadpool Presents: Marvel Click Game!</h1>
+      <h1 class="sub-heading">Just click on any Marvel Heros you like, but please choose me!</h1>
+    </header>
+    <div class="container-fluid">
+      <div class="row">
+        <aside>
+          <div class="col-xs-12 col-sm-2">
+            <table class="table scorer">
+              <tr>
+                <td>
+                  <h4><strong>Score</strong></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 id="runningCount">0</h2>
+                </td>
+              </tr>
+            </table>
+            <table class="table timer">
+              <tr>
+                <td>
+                  <h4><strong>Time</strong></h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h2 id="runningTime">20</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
         </aside>          
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-3">
+          <button class="btn btn-primary" id="start">Bang!</button>
         </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3 class="callout">Having fun Player?!</h3>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <button class="btn btn-danger" id="restart">Restart</button>
+        </div>
+
       </div>
-
-    <div class="row">
-    <div class="col-xs-12 col-sm-3">
-      <button class="btn btn-primary" id="start">Bang!</button>
+        </div>
+     
+    <div class="col-xs-12 col-sm-10">
+      <table class="table-responsive">
+        <tr>
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://i.annihil.us/u/prod/marvel/i/mg/c/10/537ba5ff07aa4/standard_xlarge.jpg">
+              <div>CaptainMarvel</div>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://x.annihil.us/u/prod/marvel/i/mg/5/a0/537bc7036ab02/standard_xlarge.jpg">
+              <div>Thor</div>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://i.annihil.us/u/prod/marvel/i/mg/6/a0/55b6a25e654e6/standard_xlarge.jpg">
+              <div>IronMan</div>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/standard_xlarge.jpg">
+              <div>CaptainAmerica</div>
+            </button>
+          </td>  
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://i.annihil.us/u/prod/marvel/i/mg/5/b0/537baa6b25323/standard_xlarge.jpg">
+              <div>Falcon</div></button>
+          </td>
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://x.annihil.us/u/prod/marvel/i/mg/9/90/537bc9381fd1d/standard_xlarge.jpg">
+              <div>Vison</div>
+            </button>
+          </td>   
+          <td>
+            <button class="btn btn-default Marvelchar">
+              <img src="http://x.annihil.us/u/prod/marvel/i/mg/5/50/4c003442a3ea6/standard_xlarge.jpg"S>
+              <div>GhostRider</div>
+            </button>
+          </td>
+        </tr>
     </div>
-    <div class="col-xs-12 col-sm-6">
-      <h3 class="callout">Having fun Player?!</h3>
+
+    <div class="col-xs-12 col-sm-10">
+      <tr>
+        <td>
+          <button class="btn btn-default Marvelchar" disabled="true">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/9/10/537ba3f27a6e0/standard_xlarge.jpg">
+            <div>BlackWidow</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/5/e0/537bb460046bd/standard_xlarge.jpg">
+            <div>LucasCage</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="https://i.annihil.us/u/prod/marvel/i/mg/5/c0/537ba730e05e0/standard_xlarge.jpg">
+            <div>Deadpool</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar" >
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf/standard_xlarge.jpg">
+            <div>Wolverine</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/6/90/537ba6d49472b/standard_xlarge.jpg">
+            <div>Daredevil</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/9/30/538cd33e15ab7/standard_xlarge.jpg">
+            <div>Spiderman</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/c/50/537ba4b09db8e/standard_xlarge.jpg">
+            <div>Cable</div>
+          </button>
+        </td>
+      </tr>
     </div>
-    <div class="col-xs-12 col-sm-3">
-      <button class="btn btn-danger" id="restart">Restart</button>
-    </div>
+    <div class="col-xs-12 col-sm-10">
+      <tr>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/3/30/52028af90e516/standard_xlarge.jpg">
+            <div>MoonKinght</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/9/30/537bb15b06fc8/standard_xlarge.jpg">
+            <div>IronFist</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default Marvelchar">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/f/80/537bbeb8de8a3/standard_xlarge.jpg">
+            <div>Nova</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/9/40/537baad144c79/standard_xlarge.jpg">
+            <div>Gambit</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default">
+            <img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/537bc8b154504/standard_xlarge.jpg">
+            <div>Venom</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/6/70/526547e2d90ad/standard_xlarge.jpg">
+            <div>Cyclops</div>
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-default">
+            <img src="http://x.annihil.us/u/prod/marvel/i/mg/1/c0/537ba2bfd6bab/standard_xlarge.jpg">
+            <div>BlackPanter</div>
+          </button>
+        </td>
+       </tr>
+     </div>
+     </table>
 
-    </div>
-      </div>
- 
-<div class="col-xs-12 col-sm-10">
-        <table class="table-responsive">
--           <tr>
--              <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/c/10/537ba5ff07aa4/standard_xlarge.jpg"<img src="http://i.annihil.us/u/prod/marvel/i/mg/9/30/538cd33e15ab7/standard_xlarge.jpg"<img src="http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/standard_xlarge.jpg"><div>CaptainMarvel</div></button></td>
--              <td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/5/a0/537bc7036ab02/standard_xlarge.jpg"><div>Thor</div></button></td>
--              <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/6/a0/55b6a25e654e6/standard_xlarge.jpg"><div>IronMan</div></button></td>
-<td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/standard_xlarge.jpg"><div>CaptainAmerica</div></button></td>  
-<td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/5/b0/537baa6b25323/standard_xlarge.jpg"><div>Falcon</div></button></td>
-<td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/9/90/537bc9381fd1d/standard_xlarge.jpg"><div>Vison</div></button></td>   
-<td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/5/50/4c003442a3ea6/standard_xlarge.jpg"S><div>GhostRider</div></button></td>
-</div>
-
-  </tr>
-
-
-
-
-
-<div class="col-xs-12 col-sm-10">
-         <tr>
-                 <td><button class="btn btn-default Marvelchar" disabled="true"><img src="http://x.annihil.us/u/prod/marvel/i/mg/9/10/537ba3f27a6e0/standard_xlarge.jpg"><div>BlackWidow</div></button></td>
- <td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/5/e0/537bb460046bd/standard_xlarge.jpg"><div>LucasCage</div></button></td>
- <td><button class="btn btn-default Marvelchar"=><img src="https://i.annihil.us/u/prod/marvel/i/mg/5/c0/537ba730e05e0/standard_xlarge.jpg"><div>Deadpool</div></button></td>
- <td><button class="btn btn-default Marvelchar" ><img src="http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf/standard_xlarge.jpg"><div>Wolverine</div></button></td>
- <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/6/90/537ba6d49472b/standard_xlarge.jpg"><div>Daredevil</div></button></td>
- <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/9/30/538cd33e15ab7/standard_xlarge.jpg"><div>Spiderman</div></button></td>
- <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/c/50/537ba4b09db8e/standard_xlarge.jpg"><div>Cable</div></button></td>
- </tr>
- <div class="col-xs-12 col-sm-10">          <tr>
- <td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/3/30/52028af90e516/standard_xlarge.jpg"><div>MoonKinght</div></button></td>
-  <td><button class="btn btn-default Marvelchar"><img src="http://i.annihil.us/u/prod/marvel/i/mg/9/30/537bb15b06fc8/standard_xlarge.jpg"><div>IronFist</div></button></td>
-   <td><button class="btn btn-default Marvelchar"><img src="http://x.annihil.us/u/prod/marvel/i/mg/f/80/537bbeb8de8a3/standard_xlarge.jpg"><div>Nova</div></button></td>
-    <td><button class="btn btn-default"><img src="http://i.annihil.us/u/prod/marvel/i/mg/9/40/537baad144c79/standard_xlarge.jpg"><div>Gambit</div></button></td>
-     <td><button class="btn btn-default"><img src="http://i.annihil.us/u/prod/marvel/i/mg/3/20/537bc8b154504/standard_xlarge.jpg"><div>Venom</div></button></td>
-      <td><button class="btn btn-default"><img src="http://x.annihil.us/u/prod/marvel/i/mg/6/70/526547e2d90ad/standard_xlarge.jpg"><div>Cyclops</div></button></td>
-       <td><button class="btn btn-default"><img src="http://x.annihil.us/u/prod/marvel/i/mg/1/c0/537ba2bfd6bab/standard_xlarge.jpg"><div>BlackPanter</div></button></td>
-     </tr>
-   </div>
-   </table>
-  </div>
-
-<script type="text/javascript" src="Project.js"></script>
-</body>
+    <script type="text/javascript" src="Project.js"></script>
+  </body>
 </html>
