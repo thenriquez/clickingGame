@@ -28,3 +28,16 @@ body {
   text-align: center;
   color: white;
 }
+
+#verified {
+  position: fixed;
+  bottom: 0px;
+}
+
+.container-fluid {
+  margin-bottom: 50px;
+}
+
+i {
+  margin-right: 10px;
+}

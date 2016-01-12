@@ -53,3 +53,7 @@ function restartGame() {
 };
 
 resetGame.addEventListener("click", restartGame);
+
+$("#verified").click(function() {
+  $("#verified-modal").modal("show");
+});
