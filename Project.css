@@ -22,3 +22,9 @@ body {
 .text-white {
   color: white;
 }
+
+.img-heading {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
