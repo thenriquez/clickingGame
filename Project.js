@@ -2,7 +2,7 @@
 var players = document.getElementsByClassName("btn btn-default");
 var score = 0;
 var startTime = document.getElementById('start');
-var resetGame = document.getElementById('restart')
+var resetGame = document.getElementById('restart');
 var clock = 20;
 var timeLeft;
 
@@ -22,14 +22,14 @@ for (var i = 0; i < players.length; i++) {
 function start() {
   setTimeout(function() {
     if (score < 10) {
-      alert("You Suck Loser think you need some practice! You clicked on " + score + " images!");
+      alert("You suck loser, think you need some practice! You clicked on " + score + " images!");
     } else if (score >= 10 && score <= 15) {
-      alert("Not bad Not bad you clicked on " + score + " images!");
+      alert("Not bad, not bad. You clicked on " + score + " images!");
     } else {
-      alert("Nice Player You clicked " + score + " images!");
+      alert("Nice player you clicked " + score + " images!");
     };
   }, 20000)
-  this.disabled=true;
+  this.disabled = true;
   timeLeft = setInterval(function() {
     document.getElementById('runningTime').innerHTML = --clock;
     if (clock <= 0) {
@@ -49,4 +49,5 @@ startTime.addEventListener("click", start);
 function restartGame() {
   window.location.reload();
 };
+
 resetGame.addEventListener("click", restartGame);
