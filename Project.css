@@ -1,14 +1,43 @@
-body{
+body {
+  background: url("http://2.bp.blogspot.com/-PH0sNCcwjR0/UiK7Z6yozuI/AAAAAAAAIMI/s5EVCbbtOas/s1600/Deadpool+Wade+Winston+Wilson+mercenary+Comic+Marvel+Heroes+Superhero+HD+Wallpaper+for+desktop+black+background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color:#A70000;
+  font-family: "Comic Sans MS", "cursive";
 }
-.H4{
- font-family: "Comic Sans MS", cursive, sans-serif
-  color:#FF0606;
+
+.main-heading {
+  color: white;
+  text-align: center;
+}
+
+.sub-heading {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.text-white {
+  color: white;
+}
+
+.img-heading {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+#verified {
+  position: fixed;
+  bottom: 0px;
+}
+
+.container-fluid {
+  margin-bottom: 50px;
+}
+
+i {
+  margin-right: 10px;
 }

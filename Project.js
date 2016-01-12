@@ -2,7 +2,7 @@
 var players = document.getElementsByClassName("btn btn-default");
 var score = 0;
 var startTime = document.getElementById('start');
-var resetGame = document.getElementById('restart')
+var resetGame = document.getElementById('restart');
 var clock = 20;
 var timeLeft;
 
@@ -11,7 +11,6 @@ var timeLeft;
 for (var i = 0; i < players.length; i++) {
   players[i].addEventListener("click", function() {
     score = score + 1;
-    //alert(score);
     this.disabled = true;
     document.getElementById("runningCount").innerHTML = score;
   });
@@ -22,16 +21,19 @@ for (var i = 0; i < players.length; i++) {
 function start() {
   setTimeout(function() {
     if (score < 10) {
-      alert("You Suck Loser think you need some practice! You clicked on " + score + " images!");
+      $("#low-score").modal("show");
+      $("#append-low").html("You suck loser, think you need some practice! You clicked on " + score + " images!");
     } else if (score >= 10 && score <= 15) {
-      alert("Not bad Not bad you clicked on " + score + " images!");
+      $("#medium-score").modal("show");
+      $("#append-medium").html("Not bad, not bad. You clicked on " + score + " images!");
     } else {
-      alert("Nice Player You clicked " + score + " images!");
-    };
-  }, 20000)
-  this.disabled=true;
+      $("#high-score").modal("show");
+      $("#append-high").html("Nice player, you clicked " + score + " images!");
+    }
+  }, 20000);
+  this.disabled = true;
   timeLeft = setInterval(function() {
-    document.getElementById('runningTime').innerHTML = --clock;
+    document.getElementById('runningTime').innerHTML = clock = clock - 1;
     if (clock <= 0) {
       document.getElementById('runningTime').innerHTML = 'Time!';
       clearInterval(interval);
@@ -48,5 +50,10 @@ startTime.addEventListener("click", start);
 
 function restartGame() {
   window.location.reload();
-};
+}
+
 resetGame.addEventListener("click", restartGame);
+
+$("#verified").click(function() {
+  $("#verified-modal").modal("show");
+});
