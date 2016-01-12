@@ -7,14 +7,24 @@ body {
   font-family: "Comic Sans MS", "cursive";
 }
 
-.heading {
+.main-heading {
   color: white;
+  text-align: center;
 }
 
 .sub-heading {
   color: white;
   font-size: 24px;
   margin-bottom: 50px;
+  text-align: center;
+}
+
+.scorer {
+  color: white;
+}
+
+.timer {
+  color: white;
 }
 
 .callout {
