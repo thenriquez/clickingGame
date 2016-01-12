@@ -29,11 +29,11 @@ function start() {
     } else {
       $("#high-score").modal("show");
       $("#append-high").html("Nice player, you clicked " + score + " images!");
-    };
-  }, 20000)
+    }
+  }, 20000);
   this.disabled = true;
   timeLeft = setInterval(function() {
-    document.getElementById('runningTime').innerHTML = --clock;
+    document.getElementById('runningTime').innerHTML = clock = clock - 1;
     if (clock <= 0) {
       document.getElementById('runningTime').innerHTML = 'Time!';
       clearInterval(interval);
@@ -50,7 +50,7 @@ startTime.addEventListener("click", start);
 
 function restartGame() {
   window.location.reload();
-};
+}
 
 resetGame.addEventListener("click", restartGame);
 
