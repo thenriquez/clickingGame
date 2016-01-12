@@ -11,7 +11,6 @@ var timeLeft;
 for (var i = 0; i < players.length; i++) {
   players[i].addEventListener("click", function() {
     score = score + 1;
-    //alert(score);
     this.disabled = true;
     document.getElementById("runningCount").innerHTML = score;
   });
@@ -22,11 +21,14 @@ for (var i = 0; i < players.length; i++) {
 function start() {
   setTimeout(function() {
     if (score < 10) {
-      alert("You suck loser, think you need some practice! You clicked on " + score + " images!");
+      $("#low-score").modal("show");
+      $("#append-low").html("You suck loser, think you need some practice! You clicked on " + score + " images!");
     } else if (score >= 10 && score <= 15) {
-      alert("Not bad, not bad. You clicked on " + score + " images!");
+      $("#medium-score").modal("show");
+      $("#append-medium").html("Not bad, not bad. You clicked on " + score + " images!");
     } else {
-      alert("Nice player you clicked " + score + " images!");
+      $("#high-score").modal("show");
+      $("#append-high").html("Nice player, you clicked " + score + " images!");
     };
   }, 20000)
   this.disabled = true;
